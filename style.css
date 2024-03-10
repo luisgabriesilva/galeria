@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.Galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carro {
+    transition: transform 0.3s;
+    width: 250px;
+    height: 150px;
+}
+
+.carro:hover {
+    transform: scale(1.1);
+}
+
+#model {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+}
+
+#model-close-button {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#model-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 90%;
+    max-height: 90%;
+    transition: translate(-50%, -50%);
+}

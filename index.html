@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Bem vindo a minha Galeria</h1>
+    <div class="Galeria">
+        <div class="item">
+            <img src="./img/26175536-esporte-carro-modelo-foto.jpg" alt="Lamborghini" class="carro"
+                onclick="showModel(this)">
+            <h2>Audi TT</h2>
+        </div>
+        <div class="item">
+            <img src="./img/images.jpeg" alt="Lamborghini" class="carro" onclick="showModel(this)">
+            <h2>Lamborghini</h2>
+        </div>
+        <div class="item">
+            <img src="./img/Sem título.jpeg" alt="Lamborghini" class="carro" onclick="showModel(this)">
+            <h2>Bugatti</h2>
+        </div>
+    </div>
+
+
+    <div id="model">
+        <span id="model-close-button" onclick="hideModel()">x</span>
+        <img id="model-content">
+    </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
